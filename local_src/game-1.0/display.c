@@ -10,6 +10,7 @@
 
 /* Prototypes for funtions only to be used in this file */
 void blackOutAfterPaddle(int x, int y, int direction);
+void balckOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection);
 
 struct fb_copyarea rect;
 short* pixelValue;
@@ -70,14 +71,41 @@ void updateDisplay(int paddle1Y, int paddle2Y, int direction){
 	ioctl(fp, 0x4680, &rect); // updates the display
 }
 
-void blackOutAfterPaddle(int x, int y, int direction){ // direction == 1 --> up, direction == 0 --> down
-	if(direction == 0){
+void blackOutAfterPaddle(int x, int y, int direction){ // direction == 1 --> up, direction == -1 --> down
+	if(direction == -1){
 		for(int i = x; i < x + 10; i++){
-			pixelValue[y*320 + i] = 0x0000;
+			for(int j = y; j < y + 5; j++){
+				pixelValue[j*320 + i] = 0x0000;
+			}
 		}
 	}else if (direction == 1){
 		for(int i = x; i < x + 10; i++){
-			pixelValue[(y+50)*320 + i] = 0x0000;
+			for(int j = y - 5; j < y; j++){
+				pixelValue[(j+50)*320 + i] = 0x0000;
+			}
 		}
 	}
+}
+
+void balckOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection){
+	if(xDirection == 1 && yDirection == 0){
+		for(int i = xPosition; i < xPosition + 5; i++){
+			for(int j = yPosition; j < yPosition + 10; j++){
+				pixelValue[j*320 + i] = 0x0000;
+			}
+		}
+	}else if (xDirection == -1 && yDirection == 0){
+
+	}else if (xDirection == 1 && yDirection == 1){
+
+	}else if (xDirection == 1 && yDirection == -1){
+
+	}else if (xDirection == -1 && yDirection == 1){
+
+	}else if (xDirection == -1 && yDirection == -1){
+
+	}
+
+
+
 }
