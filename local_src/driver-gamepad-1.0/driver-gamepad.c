@@ -1,16 +1,15 @@
-/*
- * This is a demo Linux kernel module.
- */
-
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/init.h>
-#include <linux/ioport.h>
+#include <linux/ioport.h> // Får at det er feil i denne filen
 #include <asm/io.h>
 #include <linux/interrupt.h>
 #include <linux/fs.h>
 #include <linux/types.h>
 #include <linux/cdev.h>
+#include <linux/device.h>
+#include <asm/uaccess.h>
+#include <asm/signal.h>
 
 #include "efm32gg.h"
 
@@ -35,8 +34,9 @@ static int __init gamepad_init(void);
 static void __exit gamepad_exit(void);
 static ssize_t gamepadRead(struct file*, char* __user, size_t, loff_t*);
 static int gamepadOpen(struct inode*, struct file*);
-static int gamepadRelase(struct inode*, struct file*);
+static int gamepadRelease(struct inode*, struct file*);
 static ssize_t gamepadWrite(struct file*, const char* __user, size_t, loff_t*);
+irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs);
 
 /*Static variables */
 static dev_t devNumber;
@@ -47,7 +47,7 @@ struct class* cl;
 static struct file_operations gamepad_fops = {
 	.owner = THIS_MODULE,
 	.open = gamepadOpen,
-	.relase = gamepadRelase,
+	.release = gamepadRelease,
 	.write = gamepadWrite,
 	.read = gamepadRead
 	
@@ -65,12 +65,12 @@ static int __init gamepad_init(void)
 		return -1;
 	}
 	
-	/* Ckecks if needed registers are allocated */
-	if(request_mem_region(GPIO_PC_CTRL, GPIO_PC_PINLOCKN - GPIO_PC_CTRL, DRIVER_NAME) == NULL){
+	/* Ckecks if needed registers are allocated */		//Får cast warnig på den her - SPØRR
+	if(request_mem_region(GPIO_PC_CTRL,(int) (GPIO_PC_PINLOCKN - GPIO_PC_CTRL), DRIVER_NAME) == NULL){
 		printk(KERN_ALERT "Error: Could not request memory for GPIO_PC_DIN\n");
 		return -1;
 	}
-	if(request_mem_region(GPIO_EXTIPSELL, GPIO_IFC - GPIO_EXTIPSELL, DRIVER_NAME) == NULL){
+	if(request_mem_region(GPIO_EXTIPSELL, (int)(GPIO_IFC - GPIO_EXTIPSELL), DRIVER_NAME) == NULL){
 		printk(KERN_ALERT "Error: Could not request memory for GPIO_PC_DOUT\n");
 		return -1;
 	}
@@ -82,8 +82,8 @@ static int __init gamepad_init(void)
 	
 	/* Setup  interrupts */	
 	iowrite32(0x22222222, GPIO_EXTIPSELL);
-	request_irq(GPIO_EVEN_IRQ_LINE, (irqreturn_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev );
-	request_irq(GPIO_ODD_IRQ_LINE, (irqreturn_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev);
+	request_irq(GPIO_EVEN_IRQ_LINE, (irq_handler_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev );
+	request_irq(GPIO_ODD_IRQ_LINE, (irq_handler_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev);
 
 	/* Adding device to kernel */
 	cdev_init(&gamepad_cdev, &gamepad_fops);
@@ -93,8 +93,8 @@ static int __init gamepad_init(void)
 		printk(KERN_ALERT "Error: could not add device driver\n");
 		return -1;
 	}
-	cl = class_create(THIS_MODULE, DRIVER_NAME);
-	device_create(cd, NULL, devNumer, NULL, DRIVER_NAME);
+	cl = class_create(THIS_MODULE, DRIVER_NAME); // implicit decleration på den her
+	device_create(cl, NULL, devNumber, NULL, DRIVER_NAME); // samme her
 	
 	/* Enable interrupts */
 	iowrite32(0xff, GPIO_EXTIFALL);
@@ -121,21 +121,22 @@ static void __exit gamepad_exit(void)
 	iowrite32(0, GPIO_IEN);
 	
 	/* Free irq */
-	free_irq(GPIO_ODD_, &gamepad_cdev);
+	free_irq(GPIO_ODD_IRQ_LINE, &gamepad_cdev);
 	free_irq(GPIO_EVEN_IRQ_LINE, &gamepad_cdev);
 
 	/* Free memory */
-	release_mem_region(GPIO_PC_CTRL, GPIO_PC_PINLOCKN - GPIO_PC_CTRL);
-	release_mem_region(GPIO_EXTIPSELL, GPIO_IFC - GPIO_EXTIPSELL);
+	release_mem_region(GPIO_PC_CTRL, (int) (GPIO_PC_PINLOCKN - GPIO_PC_CTRL));
+	release_mem_region(GPIO_EXTIPSELL, (int) (GPIO_IFC - GPIO_EXTIPSELL));
 
-	cdev_del(&gampad_cdev);  //Delete the cdev struct
-	unregister_chr_dev_region(devNumber, DEV_NR_COUNT); // Unregister device
+	cdev_del(&gamepad_cdev);  //Delete the cdev struct
+	unregister_chrdev_region(devNumber, DEV_NR_COUNT); // Unregister device
 }
 
 /* Interrupt handler */
 irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs){
 	printk("Interrupt beeing handled\n");
-	// Husk på å skrive verdien til gpio_if til gpio_ifc!! Hvis ikke kontinuerlig interrupts. 
+	// Husk på å skrive verdien til gpio_if til gpio_ifc!! Hvis ikke kontinuerlig interrupts.
+	return IRQ_HANDLED; 
 }
 
 static ssize_t gamepadRead(struct file* file, char __user* buff, size_t count, loff_t* offp){
@@ -152,8 +153,8 @@ static int gamepadOpen(struct inode* node, struct file* file ){
 	return 0;
 }
 
-static int gamepadRelase(struct inode* node, struct file* file){
-	printk(KERN_ALERT "Gamepad relased");
+static int gamepadRelease(struct inode* node, struct file* file){
+	printk(KERN_ALERT "Gamepad released");
 	return 0;
 }
 
@@ -164,7 +165,7 @@ static ssize_t gamepadWrite(struct file* file, const char __user* buff, size_t c
 
  
 module_init(gamepad_init);
-module_exit(gamepad_cleanup);
+module_exit(gamepad_exit);
 
 MODULE_DESCRIPTION("Modul to handle the gampad\n");
 MODULE_LICENSE("GPL");
