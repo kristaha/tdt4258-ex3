@@ -10,7 +10,7 @@
 
 /* Prototypes for funtions only to be used in this file */
 void blackOutAfterPaddle(int x, int y, int direction);
-void balckOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection);
+void blackOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection);
 
 struct fb_copyarea rect;
 short* pixelValue;
@@ -62,12 +62,13 @@ void paintBall(int x, int y){
 	}
 }
 
-void updateDisplay(int paddle1Y, int paddle2Y, int direction){
+void updateDisplay(int paddle1Y, int paddle2Y, int direction, int ballX, int ballY, int ballDirectionX, int ballDirectionY){
 	paintRect(paddle1PositionX, paddle1Y);	//Paddle 1
 	blackOutAfterPaddle(paddle1PositionX, paddle1Y, direction);
 	paintRect(paddle2PositionX, paddle2Y);	//Paddle 2
 	blackOutAfterPaddle(paddle2PositionX, paddle2Y, direction);
-	
+	paintBall(ballX, ballY);
+	blackOutAfterBall(ballX, ballY, ballDirectionX, ballDirectionY);	
 	ioctl(fp, 0x4680, &rect); // updates the display
 }
 
@@ -87,19 +88,31 @@ void blackOutAfterPaddle(int x, int y, int direction){ // direction == 1 --> up,
 	}
 }
 
-void balckOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection){
-	if(xDirection == 1 && yDirection == 0){
+void blackOutAfterBall(int xPosition, int yPosition, int xDirection, int yDirection){
+	if(xDirection == 1 && yDirection == 0){	// Only right
+		for(int i = xPosition - 5; i < xPosition; i++){
+			for(int j = yPosition; j < yPosition + 10; j++){
+				pixelValue[j*320 + i] = 0x0000;
+			}
+		}
+	}else if (xDirection == -1 && yDirection == 0){	//Only left 
+		for(int i = xPosition + 10; i < xPosition + 15; i++){
+			for(int j = yPosition; j < yPosition + 10; j++){
+				pixelValue[j*320 + i] = 0x0000;
+			}
+		}	
+	}else if (xDirection == 1 && yDirection == 1){
+		for(int i = xPosition - 5; i < xPosition + 10; i++){
+			for(int j = yPosition-5; j < yPosition + 10; j++){
+				pixelValue[j*320 + i] = 0x0000;
+			}
+		}
+	}else if (xDirection == 1 && yDirection == -1){
 		for(int i = xPosition; i < xPosition + 5; i++){
 			for(int j = yPosition; j < yPosition + 10; j++){
 				pixelValue[j*320 + i] = 0x0000;
 			}
 		}
-	}else if (xDirection == -1 && yDirection == 0){
-
-	}else if (xDirection == 1 && yDirection == 1){
-
-	}else if (xDirection == 1 && yDirection == -1){
-
 	}else if (xDirection == -1 && yDirection == 1){
 
 	}else if (xDirection == -1 && yDirection == -1){

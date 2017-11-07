@@ -9,7 +9,7 @@ clean:
 else
 
 obj-m	:= driver-gamepad.o
-CFLAGS_MODULE := -mlong-calls
+CFLAGS_MODULE := -mlong-calls 
 
 modules modules_install clean:
 	$(MAKE) -C $(PTX_KERNEL_DIR) M=$(CURDIR) V=$(V) $@
