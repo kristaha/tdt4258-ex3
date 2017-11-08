@@ -20781,3 +20781,2023 @@ make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/
 
 
 
+{{{ 2017-11-08T14:30:27+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:30:28+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:30:39+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99     game.c *.o   -o game
+game.c:44:8: error: variable 'gameSigaction' has initializer but incomplete type
+game.c:45:2: error: unknown field 'sa_handler' specified in initializer
+game.c:45:2: warning: excess elements in struct initializer [enabled by default]
+game.c:45:2: warning: (near initialization for 'gameSigaction') [enabled by default]
+game.c: In function 'initGamepad':
+game.c:89:2: warning: implicit declaration of function 'sigaction' [-Wimplicit-function-declaration]
+game.c:92:2: warning: implicit declaration of function 'fileno' [-Wimplicit-function-declaration]
+game.c:92:28: error: 'F_SETOWN' undeclared (first use in this function)
+game.c:92:28: note: each undeclared identifier is reported only once for each function it appears in
+game.c:96:46: error: 'FASYNC' undeclared (first use in this function)
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: *** [game] Error 1
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T14:30:41+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T14:40:56+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:40:58+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:41:00+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99     game.c *.o   -o game
+game.c:44:8: error: variable 'gameSigaction' has initializer but incomplete type
+game.c:45:2: error: unknown field 'sa_handler' specified in initializer
+game.c:45:2: warning: excess elements in struct initializer [enabled by default]
+game.c:45:2: warning: (near initialization for 'gameSigaction') [enabled by default]
+game.c: In function 'main':
+game.c:56:2: warning: implicit declaration of function 'newGame' [-Wimplicit-function-declaration]
+game.c: In function 'initGamepad':
+game.c:90:2: warning: implicit declaration of function 'sigaction' [-Wimplicit-function-declaration]
+game.c:93:2: warning: implicit declaration of function 'fileno' [-Wimplicit-function-declaration]
+game.c:93:28: error: 'F_SETOWN' undeclared (first use in this function)
+game.c:93:28: note: each undeclared identifier is reported only once for each function it appears in
+game.c:97:46: error: 'FASYNC' undeclared (first use in this function)
+game.c: At top level:
+game.c:164:6: warning: conflicting types for 'newGame' [enabled by default]
+game.c:56:2: note: previous implicit declaration of 'newGame' was here
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: *** [game] Error 1
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T14:41:01+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T14:44:48+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:44:50+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:44:51+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99     game.c *.o   -o game
+game.c: In function 'newGame':
+game.c:24:15: error: expected declaration specifiers before ':' token
+game.c:44:8: error: parameter 'gameSigaction' is initialized
+game.c:45:2: error: unknown field 'sa_handler' specified in initializer
+game.c:45:2: warning: excess elements in struct initializer [enabled by default]
+game.c:45:2: warning: (near initialization for 'gameSigaction') [enabled by default]
+game.c:52:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:82:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:103:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:107:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:117:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:124:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:132:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:158:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:164:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+game.c:44:18: error: parameter 'gameSigaction' has incomplete type
+game.c:44:18: error: declaration for parameter 'gameSigaction' but no such parameter
+game.c:42:5: error: declaration for parameter 'ballDirectionX' but no such parameter
+game.c:41:5: error: declaration for parameter 'ballDirectionY' but no such parameter
+game.c:40:5: error: declaration for parameter 'paddle2Direction' but no such parameter
+game.c:39:5: error: declaration for parameter 'paddle1Direction' but no such parameter
+game.c:30:5: error: declaration for parameter 'ballPositionY' but no such parameter
+game.c:29:5: error: declaration for parameter 'ballPositionX' but no such parameter
+game.c:28:5: error: declaration for parameter 'paddle2PositionY' but no such parameter
+game.c:173:1: error: expected '{' at end of input
+make[1]: *** [game] Error 1
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T14:44:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T14:45:51+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:45:53+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:45:54+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=c99     game.c *.o   -o game
+game.c:44:8: error: variable 'gameSigaction' has initializer but incomplete type
+game.c:45:2: error: unknown field 'sa_handler' specified in initializer
+game.c:45:2: warning: excess elements in struct initializer [enabled by default]
+game.c:45:2: warning: (near initialization for 'gameSigaction') [enabled by default]
+game.c: In function 'initGamepad':
+game.c:90:2: warning: implicit declaration of function 'sigaction' [-Wimplicit-function-declaration]
+game.c:93:2: warning: implicit declaration of function 'fileno' [-Wimplicit-function-declaration]
+game.c:93:28: error: 'F_SETOWN' undeclared (first use in this function)
+game.c:93:28: note: each undeclared identifier is reported only once for each function it appears in
+game.c:97:46: error: 'FASYNC' undeclared (first use in this function)
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: *** [game] Error 1
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T14:45:56+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T14:49:01+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:49:03+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:49:04+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T14:49:06+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:54:39+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:54:41+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:54:42+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T14:54:44+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:55:07+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T14:55:09+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:55:26+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T14:55:28+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:55:47+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test falsh-rootfs
+
+}}} 2017-11-08T14:55:47+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test falsh-rootfs; (exit value: 1)
+
+
+
+{{{ 2017-11-08T14:56:14+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T14:56:25+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T14:58:14+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting ipks:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.cmds
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.license
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.perms
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.xpkg.map
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T14:58:15+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:58:17+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T14:58:19+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:58:21+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T14:58:23+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:58:26+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T14:58:28+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T14:58:33+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T14:58:44+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:01:13+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting ipks:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.cmds
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.license
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.perms
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.xpkg.map
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:01:14+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:01:15+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T15:01:17+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:01:19+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T15:01:21+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:01:22+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:01:24+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:01:27+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:01:38+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:04:14+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting ipks:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.cmds
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.license
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.perms
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.xpkg.map
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:04:16+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:04:17+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T15:04:19+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:04:20+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T15:04:22+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:04:23+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:04:25+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:04:29+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:04:40+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:06:09+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting ipks:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.cmds
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.license
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.perms
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.xpkg.map
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:06:11+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:06:12+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T15:06:14+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:06:16+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T15:06:18+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:06:20+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:06:22+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:06:25+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:06:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:23:22+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean driver-gamepad
+
+----------------------------
+target: driver-gamepad.clean
+----------------------------
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.targetinstall.post
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0
+
+
+}}} 2017-11-08T15:23:24+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean driver-gamepad; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:23:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile driver-gamepad
+
+--------------------------
+target: driver-gamepad.get
+--------------------------
+
+finished target driver-gamepad.get
+
+------------------------------
+target: driver-gamepad.extract
+------------------------------
+
+local directory using lndir
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/driver-gamepad-1.0/platform:
+patchin: no patches found
+finished target driver-gamepad.extract
+
+-----------------------------------
+target: driver-gamepad.extract.post
+-----------------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target driver-gamepad.extract.post
+
+------------------------------
+target: driver-gamepad.prepare
+------------------------------
+
+finished target driver-gamepad.prepare
+
+------------------------------
+target: driver-gamepad.compile
+------------------------------
+
+PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:$PATH KCONFIG_NOTIMESTAMP=1 pkg_wrapper_blacklist="TARGET_HARDEN_STACK TARGET_HARDEN_FORTIFY TARGET_HARDEN_RELRO TARGET_HARDEN_BINDNOW TARGET_HARDEN_PIE" make -j2 V=0 ARCH=arm CROSS_COMPILE=arm-cortexm3-uclinuxeabi- INSTALL_MOD_PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4 PTX_KERNEL_DIR=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4  DEPMOD=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin/depmod \
+		-C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4 \
+		M=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0 \
+		modules
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+  CC [M]  /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.mod.o
+  LD [M]  /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.ko
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+finished target driver-gamepad.compile
+
+}}} 2017-11-08T15:23:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile driver-gamepad; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:24:03+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall driver-gamepad
+
+------------------------------
+target: driver-gamepad.install
+------------------------------
+
+finished target driver-gamepad.install
+
+-----------------------------------
+target: driver-gamepad.install.pack
+-----------------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/driver-gamepad-1.0'
+finished target driver-gamepad.install.pack
+
+-----------------------------------
+target: driver-gamepad.install.post
+-----------------------------------
+
+finished target driver-gamepad.install.post
+
+------------------------------------
+target: driver-gamepad.targetinstall
+------------------------------------
+
+PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:$PATH KCONFIG_NOTIMESTAMP=1 pkg_wrapper_blacklist="TARGET_HARDEN_STACK TARGET_HARDEN_FORTIFY TARGET_HARDEN_RELRO TARGET_HARDEN_BINDNOW TARGET_HARDEN_PIE" make -j2 V=0 ARCH=arm CROSS_COMPILE=arm-cortexm3-uclinuxeabi- INSTALL_MOD_PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4 PTX_KERNEL_DIR=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4  DEPMOD=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin/depmod \
+		-C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4 \
+		M=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0 \
+		modules_install
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+  INSTALL /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.ko
+  DEPMOD  3.12.0-rc4
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+finished target driver-gamepad.targetinstall
+
+-----------------------------------------
+target: driver-gamepad.targetinstall.post
+-----------------------------------------
+
+finished target driver-gamepad.targetinstall.post
+
+}}} 2017-11-08T15:24:05+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall driver-gamepad; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:24:28+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall kernel
+
+---------------------------------
+target: kernel.targetinstall.post
+---------------------------------
+
+install_init:	preparing for image creation of 'kernel-modules'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> kernel-modules
+install_init:	@VERSION@ -> 3.12~rc4
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "Robert Schwebel <r.schwebel\@pengutronix.de>" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (GPLv2) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.dep.bin
+  dst=/lib/modules/3.12.0-rc4/modules.dep.bin
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.alias.bin
+  dst=/lib/modules/3.12.0-rc4/modules.alias.bin
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.alias
+  dst=/lib/modules/3.12.0-rc4/modules.alias
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.builtin.bin
+  dst=/lib/modules/3.12.0-rc4/modules.builtin.bin
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.devname
+  dst=/lib/modules/3.12.0-rc4/modules.devname
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.order
+  dst=/lib/modules/3.12.0-rc4/modules.order
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.symbols
+  dst=/lib/modules/3.12.0-rc4/modules.symbols
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.builtin
+  dst=/lib/modules/3.12.0-rc4/modules.builtin
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.dep
+  dst=/lib/modules/3.12.0-rc4/modules.dep
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.symbols.bin
+  dst=/lib/modules/3.12.0-rc4/modules.symbols.bin
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/extra/driver-gamepad.ko
+  dst=/lib/modules/3.12.0-rc4/extra/driver-gamepad.ko
+  owner=0 
+  group=0 
+  permissions=0644
+
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4/lib/modules/3.12.0-rc4/modules.softdep
+  dst=/lib/modules/3.12.0-rc4/modules.softdep
+  owner=0 
+  group=0 
+  permissions=0644
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/kernel-modules.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/kernel-modules_3.12~rc4_arm.ipk
+done.
+finished target kernel.targetinstall.post
+
+}}} 2017-11-08T15:24:30+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall kernel; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:25:27+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:25:28+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:25:47+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:25:58+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:26:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting ipks:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.cmds
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.license
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.perms
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.targetinstall.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.xpkg.map
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:26:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:26:38+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+game.c: In function 'initGamepad':
+game.c:102:3: error: expected ';' before 'return'
+make[1]: *** [game] Error 1
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T15:26:40+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T15:26:42+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+game.c: In function 'initGamepad':
+game.c:102:3: error: expected ';' before 'return'
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: *** [game] Error 1
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T15:26:43+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T15:26:45+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:26:47+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:26:50+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:27:00+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+
+{{{ 2017-11-08T15:27:16+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean driver-gamepad
+
+----------------------------
+target: driver-gamepad.clean
+----------------------------
+
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.compile
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install.pack
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.install.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.prepare
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.targetinstall
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/driver-gamepad.targetinstall.post
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0
+
+
+}}} 2017-11-08T15:27:18+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean driver-gamepad; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:27:20+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile driver-gamepad
+
+--------------------------
+target: driver-gamepad.get
+--------------------------
+
+finished target driver-gamepad.get
+
+------------------------------
+target: driver-gamepad.extract
+------------------------------
+
+local directory using lndir
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/driver-gamepad-1.0/platform:
+patchin: no patches found
+finished target driver-gamepad.extract
+
+-----------------------------------
+target: driver-gamepad.extract.post
+-----------------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target driver-gamepad.extract.post
+
+------------------------------
+target: driver-gamepad.prepare
+------------------------------
+
+finished target driver-gamepad.prepare
+
+------------------------------
+target: driver-gamepad.compile
+------------------------------
+
+PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:$PATH KCONFIG_NOTIMESTAMP=1 pkg_wrapper_blacklist="TARGET_HARDEN_STACK TARGET_HARDEN_FORTIFY TARGET_HARDEN_RELRO TARGET_HARDEN_BINDNOW TARGET_HARDEN_PIE" make -j2 V=0 ARCH=arm CROSS_COMPILE=arm-cortexm3-uclinuxeabi- INSTALL_MOD_PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/linux-3.12-rc4 PTX_KERNEL_DIR=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4  DEPMOD=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin/depmod \
+		-C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4 \
+		M=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0 \
+		modules
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+  CC [M]  /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.mod.o
+  LD [M]  /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/driver-gamepad-1.0/driver-gamepad.ko
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/linux-3.12-rc4'
+finished target driver-gamepad.compile
+
+}}} 2017-11-08T15:27:23+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile driver-gamepad; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:27:32+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:27:34+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:27:35+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+game.c: In function 'initGamepad':
+game.c:102:3: error: expected ';' before 'return'
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: *** [game] Error 1
+make: *** [/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.compile] Error 2
+
+}}} 2017-11-08T15:27:36+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 2)
+
+
+
+{{{ 2017-11-08T15:27:58+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game
+
+------------------
+target: game.clean
+------------------
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+rm -f game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+Deleting stage files:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.extract.post
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.get
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/state/game.prepare
+
+Deleting src dir:
+/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game
+
+
+}}} 2017-11-08T15:27:59+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist clean game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:28:00+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game
+
+----------------
+target: game.get
+----------------
+
+finished target game.get
+
+--------------------
+target: game.extract
+--------------------
+
+local directory instead of tar file, linking build dir
+patchin: no patches found
+finished target game.extract
+
+-------------------------
+target: game.extract.post
+-------------------------
+
+patchin: fixup:
+patchin: fixup: done
+
+finished target game.extract.post
+
+--------------------
+target: game.prepare
+--------------------
+
+prepare stage disabled.
+finished target game.prepare
+
+--------------------
+target: game.compile
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game  -j2 
+
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99    -c -o *.o display.c
+arm-cortexm3-uclinuxeabi-gcc -O2 -g -Wall -std=gnu99     game.c *.o   -o game
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.compile
+
+}}} 2017-11-08T15:28:02+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist compile game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:28:03+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game
+
+--------------------
+target: game.install
+--------------------
+
+ptxdist: executing: PATH=/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/sbin:\/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/lib/wrapper:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/bin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-host/sbin:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/selected_toolchain:/opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ex3/ptxdist/bin:/opt/codesourcery/bin:/opt/profiler:/opt/eACommander:/opt/ex3/OSELAS.Toolchain-2012.12.0/arm-cortexm3-uclinuxeabi/gcc-4.7.2-uclibc-0.9.33.2-binutils-2.22-kernel-3.6-sanitized/bin PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' SYSROOT='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target' V=0 VERBOSE=0 AR=arm-cortexm3-uclinuxeabi-ar AS=arm-cortexm3-uclinuxeabi-as LD=arm-cortexm3-uclinuxeabi-ld NM=arm-cortexm3-uclinuxeabi-nm CC=arm-cortexm3-uclinuxeabi-gcc CXX=arm-cortexm3-uclinuxeabi-g++ CPP=arm-cortexm3-uclinuxeabi-cpp RANLIB=arm-cortexm3-uclinuxeabi-ranlib READELF=arm-cortexm3-uclinuxeabi-readelf OBJCOPY=arm-cortexm3-uclinuxeabi-objcopy OBJDUMP=arm-cortexm3-uclinuxeabi-objdump STRIP=arm-cortexm3-uclinuxeabi-strip DLLTOOL=arm-cortexm3-uclinuxeabi-dlltool GNAT=arm-cortexm3-uclinuxeabi-gnat GNATBIND=arm-cortexm3-uclinuxeabi-gnatbind GNATCHOP=arm-cortexm3-uclinuxeabi-gnatchop GNATCLEAN=arm-cortexm3-uclinuxeabi-gnatclean GNATFIND=arm-cortexm3-uclinuxeabi-gnatfind GNATKR=arm-cortexm3-uclinuxeabi-gnatkr GNATLINK=arm-cortexm3-uclinuxeabi-gnatlink GNATLS=arm-cortexm3-uclinuxeabi-gnatls GNATMAKE=arm-cortexm3-uclinuxeabi-gnatmake GNATNAME=arm-cortexm3-uclinuxeabi-gnatname GNATPREP=arm-cortexm3-uclinuxeabi-gnatprep GNATXREF=arm-cortexm3-uclinuxeabi-gnatxref CC_FOR_BUILD=gcc CPP_FOR_BUILD=gcc LINK_FOR_BUILD=gcc SYSROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target" PKG_CONFIG_PATH='' PKG_CONFIG_LIBDIR='/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr//pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/share/pkgconfig:/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-target/usr/share/pkgconfig' PKG_CONFIG="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/sysroot-cross/bin/arm-cortexm3-uclinuxeabi-pkg-config" enable_option_checking=fatal ac_cv_file__dev_random=yes ac_cv_file__proc_self_exe=yes ac_cv_file__proc_self_fd=yes ac_cv_file__proc_self_maps=yes ac_cv_func_dcgettext=yes ac_cv_func_getpgrp_void=yes ac_cv_func_getrlimit=yes ac_cv_func_malloc_0_nonnull=yes ac_cv_func_memcmp_clean=yes ac_cv_func_memcmp_working=yes ac_cv_func_nonposix_getgrgid_r=no ac_cv_func_nonposix_getpwuid_r=no ac_cv_func_posix_getgrgid_r=yes ac_cv_func_posix_getpwnam_r=yes ac_cv_func_posix_getpwuid_r=yes ac_cv_func_printf_unix98=yes ac_cv_func_realloc_0_nonnull=yes ac_cv_func_setgrent_void=yes ac_cv_func_setpgrp_void=yes ac_cv_func_setvbuf_reversed=no ac_cv_func_strstr=yes ac_cv_func_strtod=yes ac_cv_func_strtoul=yes ac_cv_func_vsnprintf_c99=yes ac_cv_func_wait3_rusage=yes ac_cv_have_abstract_sockets=yes ac_cv_lib_c_inet_aton=yes ac_cv_sizeof_long_double="8" ac_cv_sizeof_long_long=8 ac_cv_sysv_ipc=yes ac_cv_type_uintptr_t=yes bash_cv_func_ctype_nonascii=yes bash_cv_func_sigsetjmp=present bash_cv_func_strcoll_broken=no bash_cv_must_reinstall_sighandlers=no glib_cv_long_long_format="ll" gt_cv_func_gettext_libintl=yes ac_cv_func_fork=yes ac_cv_func_fork_works=yes ac_cv_func_iconv_open=no  make -C /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game DESTDIR="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" INSTALL_ROOT="/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game" install -j1
+make[1]: Entering directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+make[1]: Nothing to be done for `install'.
+make[1]: Leaving directory `/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/local_src/game-1.0'
+finished target game.install
+
+-------------------------
+target: game.install.pack
+-------------------------
+
+ptxdist: warning: PKG didn't install anything to '/home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game'
+finished target game.install.pack
+
+-------------------------
+target: game.install.post
+-------------------------
+
+finished target game.install.post
+
+--------------------------
+target: game.targetinstall
+--------------------------
+
+install_init:	preparing for image creation of 'game'...
+install_init:	@ARCH@ -> arm
+install_init:	@PACKAGE@ -> game
+install_init:	@VERSION@ -> 1.0
+install_init:	@DEPENDS@ -> 
+install_init:	preinst not available
+install_init:	postinst not available
+install_init:	prerm not available
+install_init:	postrm not available
+install_fixup:	@PRIORITY@ -> optional ... done.
+install_fixup:	@SECTION@ -> base ... done.
+install_fixup:	@AUTHOR@ -> "" ... done.
+install_fixup:	@DESCRIPTION@ -> missing ... done.
+xpkg_finish:	collecting license (unknown) ... done.
+xpkg_finish:	creating ipkg package ... 
+install file:
+  src=OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/build-target/game/game
+  dst=/usr/bin/game
+  owner=0 
+  group=0 
+  permissions=0755
+
+Packaged contents of /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game.tmp/ipkg into /home/tdt4258/support-files/Group29_ex3/OSELAS.BSP-EnergyMicro-Gecko/platform-energymicro-efm32gg-dk3750/packages/game_1.0_arm.ipk
+done.
+finished target game.targetinstall
+
+-------------------------------
+target: game.targetinstall.post
+-------------------------------
+
+finished target game.targetinstall.post
+
+}}} 2017-11-08T15:28:05+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist targetinstall game; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:28:07+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs
+Installing os-release (1.0) to root...
+Installing init (1.0.0) to root...
+Installing fbtest (20041102+1) to root...
+Installing kernel-modules (3.12~rc4) to root...
+Installing game (1.0) to root...
+Installing busybox (1.21.0) to root...
+Installing rootfs (1.0.0) to root...
+Configuring busybox
+Configuring fbtest
+Configuring game
+Configuring init
+Configuring kernel-modules
+Configuring os-release
+Configuring rootfs
+Successfully terminated.
+finished target image_working_dir
+Creating root.romfs from image_working_dir...done.
+
+}}} 2017-11-08T15:28:08+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist image root.romfs; (exit value: 0)
+
+
+
+{{{ 2017-11-08T15:28:10+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs
+
+}}} 2017-11-08T15:28:22+0100 /opt/ex3/ptxdist-2013/lib/ptxdist-2013.07.1/bin/ptxdist test flash-rootfs; (exit value: 255)
+
+
+

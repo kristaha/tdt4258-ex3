@@ -139,9 +139,9 @@ static void __exit gamepad_exit(void)
 /* Interrupt handler */
 irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs){
 	printk("Interrupt beeing handled\n");
-	// Husk på å skrive verdien til gpio_if til gpio_ifc!! Hvis ikke kontinuerlig interrupts.
 	iowrite32(ioread32(GPIO_IF), GPIO_IFC);
 	if(async_queue){
+		printk("In queue\n");
 		kill_fasync(&async_queue, SIGIO, POLL_IN);
 	}
 	return IRQ_HANDLED; 
@@ -173,6 +173,7 @@ static ssize_t gamepadWrite(struct file* file, const char __user* buff, size_t c
 }
 
 static int gamepad_fasync(int fd, struct file *filp, int mode){
+	printk("Fasync handler");
 	return fasync_helper(fd, filp, mode, &async_queue);	
 }
  
