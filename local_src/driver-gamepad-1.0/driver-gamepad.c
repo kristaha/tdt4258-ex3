@@ -163,7 +163,7 @@ static int gamepadOpen(struct inode* node, struct file* file ){
 }
 
 static int gamepadRelease(struct inode* node, struct file* file){
-	printk(KERN_ALERT "Gamepad released");
+	printk(KERN_ALERT "Gamepad released\n");
 	return 0;
 }
 

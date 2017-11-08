@@ -18,16 +18,17 @@ void saHandler(int signalNumber);
 void movePaddle1(); 
 void movePaddle2(); 
 void moveBall();
-//void hitPaddle1();
-//void hitPaddle2();
+void hitPaddle1();
+void hitPaddle2();
+void hitEdges();
 int  checkIfScore();
 void newGame(); 
 
 /* Positions values */
-int paddle1PositionY; // = 90;
-int paddle2PositionY; // = 90;
-int ballPositionX; // = 155;
-int ballPositionY; // = 115;
+int paddle1PositionY; 
+int paddle2PositionY; 
+int ballPositionX; 
+int ballPositionY; 
 
 /* Direction Values
 Paddle directions:
@@ -36,10 +37,11 @@ Ball directions:
 xDirextion == 1 --> right, xDirection == -1 --> left
 yDirection == 1 --> up, yDirection == 0 --> no change, yDirection == -1 down
 */
-int paddle1Direction; // = 0;
-int paddle2Direction; // = 0;
-int ballDirectionY; // = 0;
-int ballDirectionX; // = 1;
+int paddle1Direction; 
+int paddle2Direction; 
+int ballDirectionY; 
+int ballDirectionX;
+
 /*Structs*/
 struct sigaction gameSigaction = {
 	.sa_handler = saHandler, // ev med &
@@ -55,11 +57,11 @@ int main(int argc, char *argv[])
 	initGamepad();	
 	newGame();	
 	/* Display demo*/
-	paddle1Direction = 1;
-	paddle2Direction = 1;
+	//paddle1Direction = 1;
+	//paddle2Direction = 1;
 	
 	for(int i = 0; i < 300; i++){
-		if(paddle1PositionY <= 10){
+	/*	if(paddle1PositionY <= 10){
 			paddle1Direction = -1;
 			paddle2Direction = -1;
 			ballDirectionX = -1;
@@ -69,7 +71,14 @@ int main(int argc, char *argv[])
 			ballDirectionX = 1;
 		}
 		movePaddle1();
-		movePaddle2();
+		movePaddle2();*/
+		if(ballPositionX <= 45){
+			hitPaddle1();
+		}else if (ballPositionX >= 250){
+			hitPaddle2();
+		}else if (ballPositionY <=30 || ballPositionY >= 225){
+			hitEdges();
+		}
 		moveBall();
 		updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
 	}
@@ -109,12 +118,14 @@ void exitGamepad(){
 }
 
 void saHandler(int signalNumber){
-	printf("%d", signalNumber);
-	printf("SA handler");
 	if(signalNumber == SIGIO){
-	
+		//mapInput(read(buff));	
 	}	
 
+}
+
+void mapInput(int input) {
+	printf("%d\n", input);
 }
 
 /* Functions to move paddles and the ball */
@@ -157,8 +168,37 @@ void moveBall(){
 }
 
 	
-//void hitPaddle1();
-//void hitPaddle2();
+void hitPaddle1(){
+	if(ballPositionY >= (paddle1PositionY - 10) && ballPositionY <= paddle1PositionY + 15 && ballPositionX <= 40){
+		ballDirectionX = 1;
+		ballDirectionY = 1;
+	}else if(ballPositionY > (paddle1PositionY + 15) && ballPositionY < paddle1PositionY + 35 && ballPositionX <= 40){
+		ballDirectionX = 1;
+		ballDirectionY = 0;
+	}else if(ballPositionY >= (paddle1PositionY + 35) && ballPositionY <= paddle1PositionY + 50 && ballPositionX <= 40){
+		ballDirectionX = 1;
+		ballDirectionY = -1;
+	}
+}
+void hitPaddle2(){
+	if(ballPositionY >= (paddle2PositionY - 10) && ballPositionY <= paddle2PositionY + 15 && ballPositionX >= 270){
+		ballDirectionX = -1;
+		ballDirectionY = 1;
+	}else if(ballPositionY > (paddle2PositionY + 15) && ballPositionY < paddle2PositionY + 35 && ballPositionX >= 270){
+		ballDirectionX = -1;
+		ballDirectionY = 0;
+	}else if(ballPositionY >= (paddle2PositionY + 35) && ballPositionY <= paddle2PositionY + 50 && ballPositionX >= 270){
+		ballDirectionX = -1;
+		ballDirectionY = -1;
+	}
+}
+void hitEdges(){
+	if(ballPositionY <= 5){
+		ballDirectionY = -1;
+	}else if(ballPositionY >= 225){
+		ballDirectionY = 1;
+	}
+}
 int  checkIfScore(){
 	if(ballPositionX >= 330 || ballPositionX < 10){
 		return 1;
@@ -169,7 +209,7 @@ void newGame(){
 	paddle1PositionY = 90;
 	paddle2PositionY = 90;
 	ballPositionX = 155;
-	ballPositionY = 115;
+	ballPositionY = 110;
 	paddle1Direction = 0;
 	paddle2Direction = 0;
 	ballDirectionY = 0;
