@@ -62,13 +62,17 @@ void paintBall(int x, int y){
 	}
 }
 
-void updateDisplay(int paddle1Y, int paddle2Y, int direction, int ballX, int ballY, int ballDirectionX, int ballDirectionY){
-	paintRect(paddle1PositionX, paddle1Y);	//Paddle 1
-	blackOutAfterPaddle(paddle1PositionX, paddle1Y, direction);
-	paintRect(paddle2PositionX, paddle2Y);	//Paddle 2
-	blackOutAfterPaddle(paddle2PositionX, paddle2Y, direction);
+void updateDisplay(int paddle1Y, int paddle2Y, int paddle1Direction, int paddle2Direction, int ballX, int ballY, int ballDirectionX, int ballDirectionY){
+	/* Paddle 1 */
+	paintRect(paddle1PositionX, paddle1Y);	
+	blackOutAfterPaddle(paddle1PositionX, paddle1Y, paddle1Direction);
+	/* Paddle 2 */
+	paintRect(paddle2PositionX, paddle2Y);
+	blackOutAfterPaddle(paddle2PositionX, paddle2Y, paddle2Direction);
+	/* Ball */
 	paintBall(ballX, ballY);
-	blackOutAfterBall(ballX, ballY, ballDirectionX, ballDirectionY);	
+	blackOutAfterBall(ballX, ballY, ballDirectionX, ballDirectionY);
+	
 	ioctl(fp, 0x4680, &rect); // updates the display
 }
 

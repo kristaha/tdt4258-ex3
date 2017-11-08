@@ -934,3 +934,71 @@ driver-gamepad.install.pack : driver-gamepad.install
 driver-gamepad.install.post : driver-gamepad.install.pack
 driver-gamepad.targetinstall : driver-gamepad.install.post
 driver-gamepad.targetinstall.post : driver-gamepad.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.clean : 
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
