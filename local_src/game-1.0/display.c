@@ -38,14 +38,13 @@ int initDisplay(){
 	printf("%p\n", pixelValue);
 	paintRect(paddle1PositionX,90);
 	paintRect(paddle2PositionX,90);
-	paintBall(155, 115);
+	paintBall(155, 110);
 	ioctl(fp, 0x4680, &rect);
 
 	return 1;
 }
 
 void paintRect(int x, int y){
-	//printf("I am a rectangle");
 	for(int i = x; i < x + 10; i++){
 		for (int j = y; j < y + 50; j++){
 			pixelValue[j*320 + i] = 0xFF0F;
@@ -54,10 +53,13 @@ void paintRect(int x, int y){
 }
 
 void paintBall(int x, int y){
-	//printf("I am a ball");
-	for(int i = x; i < x + 10; i++){
-		for (int j = y; j < y + 10; j++){
-			pixelValue[j*320 + i] = 0x5555;
+	for(int i = x -5; i < x + 15; i++){
+		for (int j = y-5; j < y + 15; j++){
+			if((i < x || i > x+10) && (j < y || j > y +10 )){
+				pixelValue[j*320 + i] = 0x0000;
+			}else {
+				pixelValue[j*320 + i] = 0x5555;
+			}
 		}
 	}
 }
@@ -71,7 +73,7 @@ void updateDisplay(int paddle1Y, int paddle2Y, int paddle1Direction, int paddle2
 	blackOutAfterPaddle(paddle2PositionX, paddle2Y, paddle2Direction);
 	/* Ball */
 	paintBall(ballX, ballY);
-	blackOutAfterBall(ballX, ballY, ballDirectionX, ballDirectionY);
+	//blackOutAfterBall(ballX, ballY, ballDirectionX, ballDirectionY);
 	
 	ioctl(fp, 0x4680, &rect); // updates the display
 }

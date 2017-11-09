@@ -15,6 +15,7 @@ FILE* gamepad;
 int initGamepad();
 void exitGamepad();
 void saHandler(int signalNumber);
+void mapInput(int input);
 void movePaddle1(); 
 void movePaddle2(); 
 void moveBall();
@@ -59,26 +60,18 @@ int main(int argc, char *argv[])
 	/* Display demo*/
 	//paddle1Direction = 1;
 	//paddle2Direction = 1;
-	
-	for(int i = 0; i < 300; i++){
-	/*	if(paddle1PositionY <= 10){
-			paddle1Direction = -1;
-			paddle2Direction = -1;
-			ballDirectionX = -1;
-		}else if(paddle1PositionY >= 190){
-			paddle1Direction = 1;
-			paddle2Direction = 1;
-			ballDirectionX = 1;
-		}
-		movePaddle1();
-		movePaddle2();*/
-		if(ballPositionX <= 45){
+	int a = 1;
+	while(a == 1){
+		/*if(ballPositionX <= 45){
 			hitPaddle1();
 		}else if (ballPositionX >= 250){
 			hitPaddle2();
 		}else if (ballPositionY <=30 || ballPositionY >= 225){
 			hitEdges();
-		}
+		}*/
+		hitPaddle1();
+		hitPaddle2();
+		hitEdges();
 		moveBall();
 		updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
 	}
@@ -118,14 +111,65 @@ void exitGamepad(){
 }
 
 void saHandler(int signalNumber){
+
+	int input;
 	if(signalNumber == SIGIO){
-		//mapInput(read(buff));	
+		input = fgetc(gamepad);
+		printf("%d\n", input);
+		mapInput(input);
+		movePaddle1();
+		movePaddle2();	
 	}	
 
 }
 
 void mapInput(int input) {
-	printf("%d\n", input);
+	switch(input){
+		case 255:
+		paddle1Direction = 0;
+		paddle2Direction = 0;
+		break;
+
+		case 253:
+		paddle1Direction = 1;
+		paddle2Direction = 0;
+		break;
+		
+		case 247:
+		paddle1Direction = -1;
+		paddle2Direction = 0;
+		break;
+
+		case 223:
+		paddle1Direction = 0;
+		paddle2Direction = 1;	
+		break;
+
+		case 127:
+		paddle1Direction = 0;
+		paddle2Direction = -1;
+		break;
+
+		case 221:
+		paddle1Direction = 1;
+		paddle2Direction = 1;
+		break;	
+
+		case 215:
+		paddle1Direction = -1;
+		paddle2Direction = 1;
+		break;
+
+		case 125:
+		paddle1Direction = 1;
+		paddle2Direction = -1;
+		break;
+
+		case 119:
+		paddle1Direction = -1;
+		paddle2Direction = -1;
+		break;	
+	}
 }
 
 /* Functions to move paddles and the ball */
