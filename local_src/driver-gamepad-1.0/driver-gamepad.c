@@ -31,6 +31,7 @@
 
 /* Function prototypes */
 static int __init gamepad_init(void);
+//static int myProbe(struct device *dev); // platform driver
 static void __exit gamepad_exit(void);
 static ssize_t gamepadRead(struct file*, char* __user, size_t, loff_t*);
 static int gamepadOpen(struct inode*, struct file*);
@@ -54,10 +55,25 @@ static struct file_operations gamepad_fops = {
 	.read = gamepadRead,
 	.fasync = gamepad_fasync,	
 };
+/*
+static const struct of_device_id my_of_match[] = { // platform driver
+	{.compatible = "tdt4258", },
+	{ },
+};
+MODULE_DEVICE_TABLE(of, my_of_match);
+static struct platform_driver my_driver = {
+	.probe = myProbe,
+	.remove = remove,
+	.driver = {
+		.name = "my",
+		.owner = THIS_MODULE,
+		.of_match_table = my_of_match,
+	 },
+};
+*/
+static int __init gamepad_init(void){
+//static int myProbe(struct platform_device *dev){
 
-//static int __init template_init(void)
-static int __init gamepad_init(void)
-{
 	int x;
 	int addNumber;
 	printk("Hello World, here is your module speaking\n");

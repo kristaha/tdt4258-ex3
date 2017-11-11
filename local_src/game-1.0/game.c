@@ -69,13 +69,16 @@ int main(int argc, char *argv[])
 		}else if (ballPositionY <=30 || ballPositionY >= 225){
 			hitEdges();
 		}*/
-		hitPaddle1();
-		hitPaddle2();
-		hitEdges();
-		moveBall();
-		updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
+		if (checkIfScore() == 1){
+			newGame();
+		}else{
+			hitPaddle1();
+			hitPaddle2();
+			hitEdges();
+			moveBall();
+			updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
+		}
 	}
-	
 	/* End Demo*/
 	exit(EXIT_SUCCESS);
 }
@@ -213,25 +216,25 @@ void moveBall(){
 
 	
 void hitPaddle1(){
-	if(ballPositionY >= (paddle1PositionY - 10) && ballPositionY <= paddle1PositionY + 15 && ballPositionX <= 40){
+	if(ballPositionY >= (paddle1PositionY - 10) && ballPositionY <= paddle1PositionY + 15 && ballPositionX <= 42){
 		ballDirectionX = 1;
 		ballDirectionY = 1;
-	}else if(ballPositionY > (paddle1PositionY + 15) && ballPositionY < paddle1PositionY + 35 && ballPositionX <= 40){
+	}else if(ballPositionY > (paddle1PositionY + 15) && ballPositionY < paddle1PositionY + 35 && ballPositionX <= 42){
 		ballDirectionX = 1;
 		ballDirectionY = 0;
-	}else if(ballPositionY >= (paddle1PositionY + 35) && ballPositionY <= paddle1PositionY + 50 && ballPositionX <= 40){
+	}else if(ballPositionY >= (paddle1PositionY + 35) && ballPositionY <= paddle1PositionY + 50 && ballPositionX <= 42){
 		ballDirectionX = 1;
 		ballDirectionY = -1;
 	}
 }
 void hitPaddle2(){
-	if(ballPositionY >= (paddle2PositionY - 10) && ballPositionY <= paddle2PositionY + 15 && ballPositionX >= 270){
+	if(ballPositionY >= (paddle2PositionY - 10) && ballPositionY <= paddle2PositionY + 15 && ballPositionX >= 268){
 		ballDirectionX = -1;
 		ballDirectionY = 1;
-	}else if(ballPositionY > (paddle2PositionY + 15) && ballPositionY < paddle2PositionY + 35 && ballPositionX >= 270){
+	}else if(ballPositionY > (paddle2PositionY + 15) && ballPositionY < paddle2PositionY + 35 && ballPositionX >= 268){
 		ballDirectionX = -1;
 		ballDirectionY = 0;
-	}else if(ballPositionY >= (paddle2PositionY + 35) && ballPositionY <= paddle2PositionY + 50 && ballPositionX >= 270){
+	}else if(ballPositionY >= (paddle2PositionY + 35) && ballPositionY <= paddle2PositionY + 50 && ballPositionX >= 268){
 		ballDirectionX = -1;
 		ballDirectionY = -1;
 	}
@@ -258,5 +261,6 @@ void newGame(){
 	paddle2Direction = 0;
 	ballDirectionY = 0;
 	ballDirectionX = 1;
+	newGameDisplay();
 	updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
 } 
