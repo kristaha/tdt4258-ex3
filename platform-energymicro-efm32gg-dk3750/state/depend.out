@@ -1676,3 +1676,282 @@ game.install.pack : game.install
 game.install.post : game.install.pack
 game.targetinstall : game.install.post
 game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall
+game.clean : 
+game.get : 
+game.extract : game.get
+game.extract.post : base.install
+game.prepare : game.extract.post
+game.compile : game.prepare
+game.install : game.compile
+game.install.pack : game.install
+game.install.post : game.install.pack
+game.targetinstall : game.install.post
+game.targetinstall.post : game.targetinstall

@@ -5,9 +5,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/types.h>
-//#include <linux/types.h>
-//#include <asm/fcntl.h>
-//#include <linux/fcntl.h>
 
 FILE* gamepad;
 
@@ -31,10 +28,11 @@ int paddle2PositionY;
 int ballPositionX; 
 int ballPositionY; 
 
-/* Direction Values
-Paddle directions:
+/* **Direction Values**
+*Paddle directions*
 paddleNDirection == 1 --> up, paddleNDirection == -1 --> down, else --> no movement
-Ball directions:
+
+*Ball directions*
 xDirextion == 1 --> right, xDirection == -1 --> left
 yDirection == 1 --> up, yDirection == 0 --> no change, yDirection == -1 down
 */
@@ -45,41 +43,32 @@ int ballDirectionX;
 
 /*Structs*/
 struct sigaction gameSigaction = {
-	.sa_handler = saHandler, // ev med &
-	 
+	.sa_handler = saHandler, 
 };
-
 
 
 int main(int argc, char *argv[])
 {
-	printf("Hello World, I'm game!\n");
 	initDisplay();
 	initGamepad();	
 	newGame();	
-	/* Display demo*/
-	//paddle1Direction = 1;
-	//paddle2Direction = 1;
 	int a = 1;
 	while(a == 1){
-		/*if(ballPositionX <= 45){
-			hitPaddle1();
-		}else if (ballPositionX >= 250){
-			hitPaddle2();
-		}else if (ballPositionY <=30 || ballPositionY >= 225){
-			hitEdges();
-		}*/
 		if (checkIfScore() == 1){
 			newGame();
 		}else{
-			hitPaddle1();
-			hitPaddle2();
-			hitEdges();
+			if(ballPositionX <= 50 || ballPositionX >= 260){
+				hitPaddle1();
+				hitPaddle2();
+			}
+			if(ballPositionY <= 20 || ballPositionY >= 210){
+				hitEdges();
+			}
 			moveBall();
-			updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
+			updateDisplay(paddle1PositionY, paddle2PositionY, ballPositionX, ballPositionY);
 		}
+	usleep(33000);
 	}
-	/* End Demo*/
 	exit(EXIT_SUCCESS);
 }
 
@@ -113,8 +102,8 @@ void exitGamepad(){
 	fclose(gamepad);
 }
 
+/* Signal handler */
 void saHandler(int signalNumber){
-
 	int input;
 	if(signalNumber == SIGIO){
 		input = fgetc(gamepad);
@@ -128,47 +117,47 @@ void saHandler(int signalNumber){
 
 void mapInput(int input) {
 	switch(input){
-		case 255:
+		case 255: // No input 
 		paddle1Direction = 0;
 		paddle2Direction = 0;
 		break;
 
-		case 253:
+		case 253: // SW 2 pressed
 		paddle1Direction = 1;
 		paddle2Direction = 0;
 		break;
 		
-		case 247:
+		case 247: // SW 4 pressed
 		paddle1Direction = -1;
 		paddle2Direction = 0;
 		break;
 
-		case 223:
+		case 223: // SW 6 pressed
 		paddle1Direction = 0;
 		paddle2Direction = 1;	
 		break;
 
-		case 127:
+		case 127: // SW 8 pressed
 		paddle1Direction = 0;
 		paddle2Direction = -1;
 		break;
 
-		case 221:
+		case 221: // SW 2 and SW 6 pressed
 		paddle1Direction = 1;
 		paddle2Direction = 1;
 		break;	
 
-		case 215:
+		case 215: // SW 4 and SW 6 pressed
 		paddle1Direction = -1;
 		paddle2Direction = 1;
 		break;
 
-		case 125:
+		case 125: // SW 2 and SW 8 pressed
 		paddle1Direction = 1;
 		paddle2Direction = -1;
 		break;
 
-		case 119:
+		case 119: // SW 4 and SW 8 pressed
 		paddle1Direction = -1;
 		paddle2Direction = -1;
 		break;	
@@ -214,7 +203,7 @@ void moveBall(){
 
 }
 
-	
+/* Functions that determines if paddles or edges of the screen is hit */	
 void hitPaddle1(){
 	if(ballPositionY >= (paddle1PositionY - 10) && ballPositionY <= paddle1PositionY + 15 && ballPositionX <= 42){
 		ballDirectionX = 1;
@@ -240,18 +229,22 @@ void hitPaddle2(){
 	}
 }
 void hitEdges(){
-	if(ballPositionY <= 5){
+	if(ballPositionY <= 15){
 		ballDirectionY = -1;
-	}else if(ballPositionY >= 225){
+	}else if(ballPositionY >= 215){
 		ballDirectionY = 1;
 	}
 }
+
+/* Checks if the ball has moved passed the x position of any of the paddles. This is the definition of win in Pong*/
 int  checkIfScore(){
 	if(ballPositionX >= 330 || ballPositionX < 10){
 		return 1;
 	}
 	return 0;
 }
+
+/* Initiates a new game with paddles and the ball in their starting positions */
 void newGame(){
 	paddle1PositionY = 90;
 	paddle2PositionY = 90;
@@ -262,5 +255,5 @@ void newGame(){
 	ballDirectionY = 0;
 	ballDirectionX = 1;
 	newGameDisplay();
-	updateDisplay(paddle1PositionY, paddle2PositionY, paddle1Direction, paddle2Direction, ballPositionX, ballPositionY, ballDirectionX, ballDirectionY);
+	updateDisplay(paddle1PositionY, paddle2PositionY, ballPositionX, ballPositionY);
 } 
