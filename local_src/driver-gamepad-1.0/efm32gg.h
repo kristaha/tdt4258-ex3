@@ -3,7 +3,7 @@
 #define uint32_t unsigned int
 #define GPIO_PA_BASE 0x40006000
 #define GPIO_PB_BASE 0x40006024
-#define GPIO_PC_BASE 0x40006048
+#define GPIO_PC_BASE 0x00000048
 
 #define GPIO_PA_CTRL     ((volatile uint32_t*)(GPIO_PA_BASE + 0x00))
 #define GPIO_PA_MODEL    ((volatile uint32_t*)(GPIO_PA_BASE + 0x04))
@@ -25,23 +25,23 @@
 #define GPIO_PB_DIN      ((volatile uint32_t*)(GPIO_PB_BASE + 0x1c))
 #define GPIO_PB_PINLOCKN ((volatile uint32_t*)(GPIO_PB_BASE + 0x20))
 
-#define GPIO_PC_CTRL     ((volatile uint32_t*)(GPIO_PC_BASE + 0x00))
-#define GPIO_PC_MODEL    ((volatile uint32_t*)(GPIO_PC_BASE + 0x04))
-#define GPIO_PC_MODEH    ((volatile uint32_t*)(GPIO_PC_BASE + 0x08))
-#define GPIO_PC_DOUT     ((volatile uint32_t*)(GPIO_PC_BASE + 0x0c))
-#define GPIO_PC_DOUTSET  ((volatile uint32_t*)(GPIO_PC_BASE + 0x10))
-#define GPIO_PC_DOUTCLR  ((volatile uint32_t*)(GPIO_PC_BASE + 0x14))
-#define GPIO_PC_DOUTTGL  ((volatile uint32_t*)(GPIO_PC_BASE + 0x18))
-#define GPIO_PC_DIN      ((volatile uint32_t*)(GPIO_PC_BASE + 0x1c))
-#define GPIO_PC_PINLOCKN ((volatile uint32_t*)(GPIO_PC_BASE + 0x20))
+#define GPIO_PC_CTRL     ((GPIO_PC_BASE + 0x00))
+#define GPIO_PC_MODEL    ((GPIO_PC_BASE + 0x04))
+#define GPIO_PC_MODEH    ((GPIO_PC_BASE + 0x08))
+#define GPIO_PC_DOUT     ((GPIO_PC_BASE + 0x0c))
+#define GPIO_PC_DOUTSET  ((GPIO_PC_BASE + 0x10))
+#define GPIO_PC_DOUTCLR  ((GPIO_PC_BASE + 0x14))
+#define GPIO_PC_DOUTTGL  ((GPIO_PC_BASE + 0x18))
+#define GPIO_PC_DIN      ((GPIO_PC_BASE + 0x1c))
+#define GPIO_PC_PINLOCKN ((GPIO_PC_BASE + 0x20))
 
-#define GPIO_EXTIPSELL ((volatile uint32_t*)(GPIO_PA_BASE + 0x100))
-#define GPIO_EXTIPSELH ((volatile uint32_t*)(GPIO_PA_BASE + 0x104))
-#define GPIO_EXTIRISE  ((volatile uint32_t*)(GPIO_PA_BASE + 0x108))
-#define GPIO_EXTIFALL  ((volatile uint32_t*)(GPIO_PA_BASE + 0x10c))
-#define GPIO_IEN       ((volatile uint32_t*)(GPIO_PA_BASE + 0x110))
-#define GPIO_IFC       ((volatile uint32_t*)(GPIO_PA_BASE + 0x11c))
-#define GPIO_IF	       ((volatile uint32_t*)(GPIO_PA_BASE + 0x114))
+#define GPIO_EXTIPSELL ((0x100))
+#define GPIO_EXTIPSELH ((0x104))
+#define GPIO_EXTIRISE  ((0x108))
+#define GPIO_EXTIFALL  ((0x10c))
+#define GPIO_IEN       ((0x110))
+#define GPIO_IFC       ((0x11c))
+#define GPIO_IF	       ((0x114))
 
 // CMU
 
