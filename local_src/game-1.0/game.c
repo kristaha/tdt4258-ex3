@@ -47,8 +47,7 @@ struct sigaction gameSigaction = {
 };
 
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
 	initDisplay();
 	initGamepad();	
 	newGame();	
@@ -60,12 +59,13 @@ int main(int argc, char *argv[])
 			if(ballPositionX <= 50 || ballPositionX >= 260){
 				hitPaddle1();
 				hitPaddle2();
+				updateDisplayPaddles(paddle1PositionY, paddle2PositionY);
 			}
 			if(ballPositionY <= 20 || ballPositionY >= 210){
 				hitEdges();
 			}
 			moveBall();
-			updateDisplay(paddle1PositionY, paddle2PositionY, ballPositionX, ballPositionY);
+			updateDisplayBall( ballPositionX, ballPositionY);
 		}
 	usleep(33000);
 	}
@@ -82,7 +82,7 @@ int initGamepad(){
 		printf("Unable to open driver\n");
 		return EXIT_FAILURE;
 	}
-	if(sigaction(SIGIO, &gameSigaction, NULL) != 0){ // bruker sigaction siden signal er utdatert
+	if(sigaction(SIGIO, &gameSigaction, NULL) != 0){ 
 		printf("Could not register a signal handler\n");
 		return EXIT_FAILURE;	
 	}	
@@ -111,6 +111,7 @@ void saHandler(int signalNumber){
 		mapInput(input);
 		movePaddle1();
 		movePaddle2();	
+		updateDisplayPaddles(paddle1PositionY, paddle2PositionY);
 	}	
 
 }
@@ -238,7 +239,7 @@ void hitEdges(){
 
 /* Checks if the ball has moved passed the x position of any of the paddles. This is the definition of win in Pong*/
 int  checkIfScore(){
-	if(ballPositionX >= 330 || ballPositionX < 10){
+	if(ballPositionX >= 315 || ballPositionX < 25){
 		return 1;
 	}
 	return 0;
@@ -255,5 +256,6 @@ void newGame(){
 	ballDirectionY = 0;
 	ballDirectionX = 1;
 	newGameDisplay();
-	updateDisplay(paddle1PositionY, paddle2PositionY, ballPositionX, ballPositionY);
+	updateDisplayPaddles(paddle1PositionY, paddle2PositionY);
+	updateDisplayBall(ballPositionX, ballPositionY);
 } 

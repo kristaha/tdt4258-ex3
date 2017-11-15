@@ -57,7 +57,7 @@ void paintRect(int x, int y){
 			}
 		}
 	}
-	drawToDisplay(x, y - 20, 80, 10);
+	drawToDisplay(x, y - 22, 82, 10);
 }
 
 /* Writes values to display to view the ball with upper left corner at position (x,y) */
@@ -75,17 +75,15 @@ void paintBall(int x, int y){
 }
 
 /* Updates the display to view the game state */
-void updateDisplay(int paddle1PositionY, int paddle2PositionY,  int ballPositionX, int ballPositionY){
-
+void updateDisplayPaddles(int paddle1PositionY, int paddle2PositionY){
 	/* Paddle 1 */
 	paintRect(paddle1PositionX, paddle1PositionY);	
 	/* Paddle 2 */
 	paintRect(paddle2PositionX, paddle2PositionY);
-	/* Ball */
+}
+
+void updateDisplayBall(int ballPositionX, int ballPositionY){
 	paintBall(ballPositionX, ballPositionY);
-	/* Update display */	
-	// ioctl(fp, 0x4680, &rect); // updates the display
-	
 }
 
 void drawToDisplay(int dx, int dy, int h, int w) {
@@ -98,7 +96,7 @@ void drawToDisplay(int dx, int dy, int h, int w) {
 }
 
 void newGameDisplay(){
-	for(int i = 0; i < 41; i++){
+	for(int i = 0; i < 150; i++){
 		for(int j = 0; j < 241; j ++){
 			pixelValue[j*320 + i] = 0x0000;
 		}
