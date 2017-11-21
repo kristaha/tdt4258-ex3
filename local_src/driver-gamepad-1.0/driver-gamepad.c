@@ -38,12 +38,12 @@ static ssize_t gamepadWrite(struct file*, const char* __user, size_t, loff_t*);
 irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs);
 static int gamepad_fasync(int fd, struct file *filp, int mode);
 
-/* Static variables */
+/* Variables */
 static dev_t devNumber;
 struct cdev gamepad_cdev;
 struct class* cl;
 struct fasync_struct* async_queue;
-
+uint32_t data;
 /* Struct for file operations related to driver */
 static struct file_operations gamepad_fops = {
 	.owner = THIS_MODULE,
@@ -160,6 +160,7 @@ static int myRemove(struct platform_device *dev){
 irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs){
 	printk("Interrupt beeing handled\n");
 	iowrite32(ioread32((void*) (res->start + GPIO_IF) ), (void*) (res->start + GPIO_IFC));
+	data = ioread32((void*) (res->start + GPIO_PC_DIN));
 	if(async_queue){
 		kill_fasync(&async_queue, SIGIO, POLL_IN);
 	}
@@ -167,9 +168,7 @@ irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs){
 }
 
 static ssize_t gamepadRead(struct file* file, char __user* buff, size_t count){
-	uint32_t data;
 	printk(KERN_ALERT "Gamepad read\n");
-	data = ioread32((void*) (res->start + GPIO_PC_DIN));
 	copy_to_user(buff, &data, count);
 
 	return 1;
