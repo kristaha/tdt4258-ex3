@@ -29,8 +29,8 @@ Version: 1.0
 Section: base
 Architecture: arm
 Maintainer: ""
-MD5Sum: 879709e3de3a4e9004dca11d8cab208d
-Size: 12048
+MD5Sum: e8d997a95c511745aa6984a6faf68783
+Size: 14646
 Filename: game_1.0_arm.ipk
 Source: http://www.ptxdist.org/
 Description: missing
@@ -55,8 +55,8 @@ Version: 3.12~rc4
 Section: base
 Architecture: arm
 Maintainer: "Robert Schwebel <r.schwebel@pengutronix.de>"
-MD5Sum: 6d83745c35f0d1f66defef6d0cdae0d1
-Size: 4290
+MD5Sum: 4dbc3bc458da7a143915681534b161d9
+Size: 5970
 Filename: kernel-modules_3.12~rc4_arm.ipk
 Source: http://www.ptxdist.org/
 Description: missing

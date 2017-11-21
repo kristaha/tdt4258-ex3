@@ -104,11 +104,11 @@ void exitGamepad(){
 
 /* Signal handler */
 void saHandler(int signalNumber){
-	int input;
+	char input;
 	if(signalNumber == SIGIO){
 //		input = fgetc(gamepad);
 		read(fileno(gamepad), &input, 1);
-		printf("%d\n", input);
+//		printf("%x\n", input);
 		mapInput(input);
 		movePaddle1();
 		movePaddle2();	
