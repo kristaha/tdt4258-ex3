@@ -1,6 +1,9 @@
 Build instructions
 ==================
 
+!!!Kok i vei!!!! 
+
+
 These instructions mostly apply only if you want to set up the development toolchain on your own (Linux-based) computer.
 
 If you are working from a lab computer, the toolchain has already been set up, you can skip to the "Building the Linux distribution" part, or start reading the compendium instead. 

@@ -30,11 +30,11 @@ int ballPositionY;
 
 /* **Direction Values**
 *Paddle directions*
-paddleNDirection == 1 --> up, paddleNDirection == -1 --> down, else --> no movement
+paddleNDirection == 1 --> north, paddleNDirection == -1 --> south, else --> no movement
 
 *Ball directions*
-xDirextion == 1 --> right, xDirection == -1 --> left
-yDirection == 1 --> up, yDirection == 0 --> no change, yDirection == -1 down
+xDirection == 1 --> east, xDirection == -1 --> west
+yDirection == 1 --> north, yDirection == 0 --> no change, yDirection == -1 south
 */
 int paddle1Direction; 
 int paddle2Direction; 
@@ -106,7 +106,8 @@ void exitGamepad(){
 void saHandler(int signalNumber){
 	int input;
 	if(signalNumber == SIGIO){
-		input = fgetc(gamepad);
+//		input = fgetc(gamepad);
+		read(fileno(gamepad), &input, 1);
 		printf("%d\n", input);
 		mapInput(input);
 		movePaddle1();
@@ -182,22 +183,22 @@ void movePaddle2(){
 }
 
 void moveBall(){
-	if(ballDirectionX == 1 && ballDirectionY == 1){         // Move right, up
+	if(ballDirectionX == 1 && ballDirectionY == 1){         // Move northeast
 		ballPositionX += 5;
 		ballPositionY -= 5;
-	} else if(ballDirectionX == 1 && ballDirectionY == 0){  // Move right
+	} else if(ballDirectionX == 1 && ballDirectionY == 0){  // Move east
 		ballPositionX += 5;
 
-	} else if(ballDirectionX == -1 && ballDirectionY == 1){  // Move left, up
+	} else if(ballDirectionX == -1 && ballDirectionY == 1){  // Move northwest
 		ballPositionX -= 5;
 		ballPositionY -= 5;
-	} else if(ballDirectionX == -1 && ballDirectionY == 0){  // Move left
+	} else if(ballDirectionX == -1 && ballDirectionY == 0){  // Move west
 		ballPositionX -= 5;
 		
-	} else if(ballDirectionX == -1 && ballDirectionY == -1){ // Move left, down
+	} else if(ballDirectionX == -1 && ballDirectionY == -1){ // Move sothwest
 		ballPositionX -= 5;
 		ballPositionY += 5;
-	} else if(ballDirectionX == 1 && ballDirectionY == -1){ // Move right, down
+	} else if(ballDirectionX == 1 && ballDirectionY == -1){ // Move southeast
 		ballPositionX += 5;
 		ballPositionY += 5;
 	}

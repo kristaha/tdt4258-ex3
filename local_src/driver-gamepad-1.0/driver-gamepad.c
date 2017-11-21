@@ -28,23 +28,23 @@
 
 /* Function prototypes */
 static int __init gamepad_init(void);
-static int myProbe(struct platform_device *dev); // platform driver
-static int myRemove(struct platform_device *dev); // platform driver
+static int myProbe(struct platform_device *dev); 
+static int myRemove(struct platform_device *dev); 
 static void __exit gamepad_exit(void);
-static ssize_t gamepadRead(struct file*, char* __user, size_t, loff_t*);
+static ssize_t gamepadRead(struct file*, char* __user, size_t count);
 static int gamepadOpen(struct inode*, struct file*);
 static int gamepadRelease(struct inode*, struct file*);
 static ssize_t gamepadWrite(struct file*, const char* __user, size_t, loff_t*);
 irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs);
 static int gamepad_fasync(int fd, struct file *filp, int mode);
 
-/*Static variables */
+/* Static variables */
 static dev_t devNumber;
 struct cdev gamepad_cdev;
 struct class* cl;
 struct fasync_struct* async_queue;
 
-/* Structs */
+/* Struct for file operations related to driver */
 static struct file_operations gamepad_fops = {
 	.owner = THIS_MODULE,
 	.open = gamepadOpen,
@@ -54,7 +54,7 @@ static struct file_operations gamepad_fops = {
 	.fasync = gamepad_fasync,	
 };
 
-/* Platform driver */
+/* Variables for platform driver */
 static const struct of_device_id my_of_match[] = { 
 	{.compatible = "tdt4258", },
 	{ },
@@ -98,15 +98,17 @@ static int myProbe(struct platform_device *dev){
 		return -1;
 	}
 
-	/* Init gpio the same way as in exercise one and two
+	/* Init gpio the same way as in exercise one and two.
 	   Since arm is I/O mapped we do not need to use virtual memory */
 	iowrite32(0x33333333,(void*) (res->start + GPIO_PC_MODEL));
 	iowrite32(0xff, (void*) (res->start + GPIO_PC_DOUT));
 	
 	/* Setup  interrupts */	
 	iowrite32(0x22222222, (void*) (res->start + GPIO_EXTIPSELL));
-	request_irq(platform_get_irq(dev,PLATFORM_IRQ_EVEN_INDEX), (irq_handler_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev); // Even
-	request_irq(platform_get_irq(dev,PLATFORM_IRQ_ODD_INDEX), (irq_handler_t) gpioInterruptHandler, 0, DRIVER_NAME, &gamepad_cdev); // odd
+	request_irq(platform_get_irq(dev,PLATFORM_IRQ_EVEN_INDEX), (irq_handler_t) gpioInterruptHandler, 
+		0, DRIVER_NAME, &gamepad_cdev); // Even
+	request_irq(platform_get_irq(dev,PLATFORM_IRQ_ODD_INDEX), (irq_handler_t) gpioInterruptHandler, 
+		0, DRIVER_NAME, &gamepad_cdev); // odd
 
 	/* Adding device to kernel */
 	cdev_init(&gamepad_cdev, &gamepad_fops);
@@ -164,7 +166,7 @@ irqreturn_t gpioInterruptHandler(int irq, void *dev_id, struct pt_regs *regs){
 	return IRQ_HANDLED; 
 }
 
-static ssize_t gamepadRead(struct file* file, char __user* buff, size_t count, loff_t* offp){
+static ssize_t gamepadRead(struct file* file, char __user* buff, size_t count){
 	uint32_t data;
 	printk(KERN_ALERT "Gamepad read\n");
 	data = ioread32((void*) (res->start + GPIO_PC_DIN));

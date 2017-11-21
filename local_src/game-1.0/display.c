@@ -9,45 +9,39 @@
 #include <sys/mman.h>
 
 /* Prototypes of functions only to be used in this file */
-void paintRect(int x, int y);
+void paintPaddle(int x, int y);
 void paintBall(int x, int y);
 void drawToDisplay(int dx, int dy, int h, int w);
 
 /* Decleration of variables only to be used in this file*/
 struct fb_copyarea rect;
 short* pixelValue;
-int fp;
+int fb;
 static int paddle1PositionX = 30;
 static int paddle2PositionX = 280;
 
 /* Initiate the display */
 int initDisplay(){
-	/* Sets measurements of display */
-	rect.dx = 0;
-	rect.dy = 0;
-	rect.width = 320;
-	rect.height = 240;
-	
 	
 	/* Get access to framebuffer device which represent the graphic memory */
-	fp = open("/dev/fb0", O_RDWR);
+	fb = open("/dev/fb0", O_RDWR);
 
-	if(!fp){
-		printf("Failure open fb");
+	if(!fb){
+		printf("Failure open fb\n");
 		return 0;
 	}
 	printf("File successfully opened!\n");
 	
 	/* Memorymaps driver to array in the memory */
-	pixelValue = mmap(NULL, 2*320*240, PROT_WRITE|PROT_READ, MAP_SHARED, fp, 0);
+	pixelValue = mmap(NULL, 2*320*240, PROT_WRITE|PROT_READ, MAP_SHARED, fb, 0);
 	
 	/* Update display */
-	ioctl(fp, 0x4680, &rect);
+	ioctl(fb, 0x4680, &rect);
 	return 1;
 }
 
 /* Writes values to display to view a rectangle with upper left corner at position (x,y) */
-void paintRect(int x, int y){
+void paintPaddle(int x, int y){
 	for(int i = x; i < x + 10; i++){
 		for (int j = y - 10; j < y + 65; j++){
 			if(j <= y || j >= y + 50){
@@ -77,24 +71,26 @@ void paintBall(int x, int y){
 /* Updates the display to view the game state */
 void updateDisplayPaddles(int paddle1PositionY, int paddle2PositionY){
 	/* Paddle 1 */
-	paintRect(paddle1PositionX, paddle1PositionY);	
+	paintPaddle(paddle1PositionX, paddle1PositionY);	
 	/* Paddle 2 */
-	paintRect(paddle2PositionX, paddle2PositionY);
+	paintPaddle(paddle2PositionX, paddle2PositionY);
 }
 
 void updateDisplayBall(int ballPositionX, int ballPositionY){
 	paintBall(ballPositionX, ballPositionY);
 }
-
+/* Specifies the area on the display we want to update */
 void drawToDisplay(int dx, int dy, int h, int w) {
 	rect.dx = dx;
 	rect.dy = dy;
 	rect.height = h;
 	rect.width = w;
 
-	ioctl(fp, 0x4680, &rect);	
+	ioctl(fb, 0x4680, &rect);	
 }
 
+/* Blackes out previous visualizations from last game 
+   Called when a new game is initiated                */
 void newGameDisplay(){
 	for(int i = 0; i < 150; i++){
 		for(int j = 0; j < 241; j ++){
